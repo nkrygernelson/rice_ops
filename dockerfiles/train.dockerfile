@@ -9,4 +9,4 @@ COPY src src/
 
 RUN uv sync --frozen
 
-ENTRYPOINT ["uv", "run", "src/rice_ops/train.py"]
+ENTRYPOINT ["uv", "run", "src/ml_ops/train.py"]

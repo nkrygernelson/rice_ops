@@ -1,5 +1,5 @@
-from rice_ops.model import Model
-from rice_ops.data import MyDataset
+from ml_ops.model import Model
+from ml_ops.data import MyDataset
 
 def train():
     dataset = MyDataset("data/raw")

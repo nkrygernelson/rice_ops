@@ -9,4 +9,4 @@ COPY src src/
 
 RUN uv sync --frozen
 
-ENTRYPOINT ["uv", "run", "uvicorn", "src.rice_ops.api:app", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["uv", "run", "uvicorn", "src.ml_ops.api:app", "--host", "0.0.0.0", "--port", "8000"]

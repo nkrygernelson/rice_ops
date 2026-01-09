@@ -1,6 +1,6 @@
 from torch.utils.data import Dataset
 
-from rice_ops.data import MyDataset
+from ml_ops.data import MyDataset
 
 
 def test_my_dataset():

@@ -1,3 +1,3 @@
 ## Documentation
 
-Documentation for rice_ops
+Documentation for ml_ops

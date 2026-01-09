@@ -1,55 +1,7 @@
-# rice_ops
+# Machine Learning Operations Project 
 
-A short description of the project.
+The goal of this project is to build and evaluate deep learning models for traffic sign image classification. Traffic sign recognition is an important task in computer vision, particularly for applications such as driver assistance systems and autonomous vehicles.
 
-## Project structure
+The project will initially use the German Traffic Sign Recognition Benchmark (GTSRB) dataset. This dataset contains images of 43 different traffic sign classes captured under real-world conditions.
 
-The directory structure of the project looks like this:
-```txt
-├── .github/                  # Github actions and dependabot
-│   ├── dependabot.yaml
-│   └── workflows/
-│       └── tests.yaml
-├── configs/                  # Configuration files
-├── data/                     # Data directory
-│   ├── processed
-│   └── raw
-├── dockerfiles/              # Dockerfiles
-│   ├── api.Dockerfile
-│   └── train.Dockerfile
-├── docs/                     # Documentation
-│   ├── mkdocs.yml
-│   └── source/
-│       └── index.md
-├── models/                   # Trained models
-├── notebooks/                # Jupyter notebooks
-├── reports/                  # Reports
-│   └── figures/
-├── src/                      # Source code
-│   ├── project_name/
-│   │   ├── __init__.py
-│   │   ├── api.py
-│   │   ├── data.py
-│   │   ├── evaluate.py
-│   │   ├── models.py
-│   │   ├── train.py
-│   │   └── visualize.py
-└── tests/                    # Tests
-│   ├── __init__.py
-│   ├── test_api.py
-│   ├── test_data.py
-│   └── test_model.py
-├── .gitignore
-├── .pre-commit-config.yaml
-├── LICENSE
-├── pyproject.toml            # Python project file
-├── README.md                 # Project README
-├── requirements.txt          # Project requirements
-├── requirements_dev.txt      # Development requirements
-└── tasks.py                  # Project tasks
-```
-
-
-Created using [mlops_template](https://github.com/SkafteNicki/mlops_template),
-a [cookiecutter template](https://github.com/cookiecutter/cookiecutter) for getting
-started with Machine Learning Operations (MLOps).
+Two types of models are planned for this project. First, a custom CNN will be designed and trained from scratch. This model will allow us to explore how convolutional layers learn visual features such as edges, shapes, and symbols that are characteristic of traffic signs. Second, a pretrained convolutional neural network will be used with transfer learning, where the final layers are adapted to the traffic sign classification task.
